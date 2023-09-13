@@ -1,0 +1,10 @@
+
+/*.card {
+background-color: #6f42c1;
+}
+*/
+.card-img-bottom {
+    @media only screen and (min-width: 450px) {
+    padding: 50px;
+    }
+}

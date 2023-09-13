@@ -1,0 +1,27 @@
+### Traer publicaciones
+GET http://localhost:3000/api/tasks
+
+### Crear publicación
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "titulo": "Nuevo título",
+    "contenido": "Nuevo contenido",
+    "enlace": "www.url.com"
+}
+
+### Modificar publicación
+PUT  http://localhost:3000/api/tasks/2
+Content-Type: application/json
+
+{
+    "titulo": "Título modificado",
+    "contenido": "Contenido modificado",
+    "enlace": "www.url.com"
+}
+
+### Eliminar publicación
+DELETE http://localhost:3000/api/tasks/6
+
+
