@@ -2,7 +2,7 @@
 
 <header class="d-flex justify-content-center">
 
-  <h1>Nueva publicación</h1>
+  <h1>FORO PERSONAL</h1>
 
 </header>
 
@@ -13,17 +13,17 @@
     </div>
 
     <!-- tarjeta horizontal-->
-    <div class="card text mb-3 d-flex justify-content-center">
+    <div class="card text mb-3 d-flex justify-content-center" id="tarjeta">
       <div class="row g-0" id="contenedor-tarjeta">
         <% tasks.forEach(task => { %>
 
-           <article class="tg card text mb-3 d-flex justify-content-center" data-id="<%= task.id %>">
+           <article class="tg card text mb-3 d-flex justify-content-center" data-id="<%= task.id %>" id="article">
             <div class="row g-0" id="contenedor-tarjeta">
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <div class="col-md-4 d-flex align-items-center justify-content-center" id="caja">
                     <img src="<%= task.enlace %>" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
-                    <div class="card-body">
+                    <div class="card-body" id="ct">
                         <h5 class="card-title"><%= task.titulo %></h5>
                         <p class="card-text"><%= task.contenido %></p>
                         <p class="card-text text-end"><small class="text-body-secondary">Last updated 3 mins ago</small></p>

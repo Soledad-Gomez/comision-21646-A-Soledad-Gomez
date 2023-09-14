@@ -1,7 +1,43 @@
+* {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Acme', sans-serif;
+}
+
+body{
+    background-image: url("imagenes/starry-sky-2051448_1280.jpg");
+}
+
+h1 {
+    color: aliceblue;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Acme', sans-serif;
+    
+}
+
+#btn-crear {
+    background-color: #6f42c1;
+}
 
 #btn-nueva-publicacion {
     padding-bottom: 10px;
 }  
+
+#contenedor-tarjeta {
+    margin: 30px solid transparent;
+    padding: solid transparent;
+    
+}
+
+#tarjeta {
+    margin: 10 px solid transparent;
+    padding: solid transparent;
+    
+}
+
+#article {
+    margin: solid transparent;
+    padding: 10 px solid transparent;
+}
 
 
 .card-img-bottom {
