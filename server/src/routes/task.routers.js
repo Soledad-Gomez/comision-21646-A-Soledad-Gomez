@@ -1,9 +1,12 @@
 import { Router } from "express";
-import { ctrlDeleteTask, ctrlGetTask, ctrlUpdateTask, ctrlcreateTask } from "../controllers/task.controllers.js";
+import { ctrlDeleteTask, ctrlGetTask, ctrlUpdateTask, ctrlView, ctrlcreateTask } from "../controllers/task.controllers.js";
 import { createTaskSchema, editTaskSchema } from "../models/schemas/task.schema.js";
 import { validator } from "../middlewares/validator.js";
 
 const taskRouter = Router();
+
+//ruta para la vista
+taskRouter.get("/tasks", ctrlView)
 
 // endpoint para traer todas las publicaciones
 taskRouter.get("/api/tasks", ctrlGetTask)
