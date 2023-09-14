@@ -6,7 +6,7 @@ import cors from "cors";
 import { fileURLToPath } from "node:url";
 import helmet from "helmet";
 import morgan from "morgan";
-import 'dotenv/config';
+import "dotenv/config"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,11 +24,11 @@ app.use(express.static(path.join(__dirname, "src", "public")));
 app.set("views", path.join(__dirname, "src", "views"));
 app.set("view engine", "ejs");
 
-const port = process.env.PORT || 3000;
+const port = 3000
 
 app.use("/", taskRouter)
 
 app.listen(port,() => {
-    console.log(`server listening http://localhost:${port}`) 
+    console.log(`server listening http://localhost:${port}/tasks`) 
     startDb()
 });

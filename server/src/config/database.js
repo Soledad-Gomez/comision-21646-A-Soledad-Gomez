@@ -1,9 +1,9 @@
 import { Sequelize } from "sequelize";
 
-export const sequelize = new Sequelize (process.env.DB_NAME || "db_task", process.env.DB_USER || "root", process.env.DB_PASSWORD || "", {
-    host: process.env.DB_HOST || "localhost",
-    dialect: process.env.DB_DIALECT || "mysql",
-  });
+export const sequelize = new Sequelize ("db_task", "root",  "", {
+    host:"localhost",
+    dialect: "mysql",
+  }); 
 
   export const startDb = async () => {
     try {
@@ -14,4 +14,4 @@ export const sequelize = new Sequelize (process.env.DB_NAME || "db_task", proces
       } catch (error) {
         console.error('Unable to connect to the database:', error);
       }
-  }
+  };

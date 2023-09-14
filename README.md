@@ -1,0 +1,2 @@
+<div align="center">
+Foro para publicaciones personales, en el que se puede crear publicaciones en las que se agregue un título, el contenido y una imágen relacioneada. También se pueden eliminar y modificar las publicaciones.

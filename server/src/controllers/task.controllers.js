@@ -5,6 +5,7 @@ export const ctrlView = async (req, res) => {
     try {
         const tasks = await TaskModel.findAll();
         res.render("index.ejs", {tasks})
+console.log("ctrlview")
     
     } catch (error) {
         console.error(error)
