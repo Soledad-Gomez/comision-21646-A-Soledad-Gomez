@@ -8,46 +8,72 @@
     <title>Foro</title>
 </head>
 <body>
+<header class="d-flex justify-content-center">
 
   <h1>Nueva publicación</h1>
 
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Nueva publicación
-  </button>
+</header>
 
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<main>
+    <!--modal para nueva publicación-->
+    <div class="d-flex justify-content-center" id="btn-nueva-publicacion">
+      <button type="button" class="btn btn-primary" id="btn-crear">Nueva publicación</button>
+    </div>
+
+    <!-- tarjeta horizontal-->
+    <div class="card text mb-3 d-flex justify-content-center">
+      <div class="row g-0" id="contenedor-tarjeta">
+        <!--<div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-1200x675.jpg" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="modal-body">
-        ...
-        </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Título</h5>
+            <p class="card-text">Contenido</p>
+            <p class="card-text text-end"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <div class="text-end">
+              <a href="#" class="btn btn-secondary">Editar publicación</a>
+              <a href="#" class="btn btn-danger">eliminar publicación</a>
+            </div>
+          </div>
+        </div>-->
       </div>
-   </div>
-  </div>
+    </div>
 
-  <!-- tarjeta-->
-     <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-1200x675.jpg" class="card-img-bottom" alt="...">
-     </div>
+<!-- Modal-->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Nueva publicación</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <form id="formulario">
+              <div class="mb-3">
+                <label for="inputTitulo" class="col-form-label">Título:</label>
+                <input type="text" class="form-control" id="inputTitulo">
+              </div>
+              <div class="mb-3">
+                <label for="imputContenido" class="col-form-label">Contenido:</label>
+                <textarea class="form-control" id="imputContenido"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="inputUrl" class="col-form-label">Link de la imágen:</label>
+                <input type="text" class="form-control" id="inputUrl">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary" id="btn-publicar">Publicar</button>
+              </div>
+            </form>
+          </div>
+    </div>
+    </div>
 
-
-
+  <!--scripts-->
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>

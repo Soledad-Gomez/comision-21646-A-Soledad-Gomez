@@ -6,9 +6,9 @@ POST http://localhost:3000/api/tasks
 Content-Type: application/json
 
 {
-    "titulo": "Nuevo título",
-    "contenido": "Nuevo contenido",
-    "enlace": "www.url.com"
+    "titulo": "cuarto post",
+    "contenido": "cuarto contenido",
+    "enlace": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-1200x675.jpg"
 }
 
 ### Modificar publicación
@@ -22,6 +22,6 @@ Content-Type: application/json
 }
 
 ### Eliminar publicación
-DELETE http://localhost:3000/api/tasks/6
+DELETE http://localhost:3000/api/tasks/5
 
 

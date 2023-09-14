@@ -1,7 +1,7 @@
 import express from "express";
 import { taskRouter } from "./src/routes/task.routers.js";
 import { startDb } from "./src/config/database.js";
-import cors from 'cors'
+import cors from "cors"
 
 
 const app = express();
