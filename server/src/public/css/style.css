@@ -1,45 +1,76 @@
 * {
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'Acme', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Kalam', cursive;
 }
+
+header{
+    background-color: #867070;
+    padding-top: 5px;
+}
+
 
 body{
-    background-image: url("imagenes/starry-sky-2051448_1280.jpg");
+    background-color: #D5B4B4;
+        
 }
 
-h1 {
+
+#foro {
+    font-family: 'Dancing Script', cursive;
     color: aliceblue;
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'Acme', sans-serif;
-    
+    background-color: #867070;
+}
+
+@media screen and (max-width: 450px) {
+    #inicial {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+  }
+
+#inicial {
+    background-color: #867070;
+    padding-bottom: 10px;
+    color: aliceblue;
+}
+.imagen {
+    background-image: url(/imagenes/starry-sky-2051448_1280.jpg);
+    width: 100px;
 }
 
 #btn-crear {
-    background-color: #6f42c1;
+    background-color: #E4D0D0;
+    border-color: #867070;
+    color: black;
 }
 
 #btn-nueva-publicacion {
-    padding-bottom: 10px;
+    padding: 10px;
+    
 }  
+
+#btnEliminar {
+    background-color: #D80032;
+    color: aliceblue;
+}
 
 #contenedor-tarjeta {
     margin: 30px solid transparent;
     padding: solid transparent;
-    
-}
-
-#tarjeta {
-    margin: 10 px solid transparent;
-    padding: solid transparent;
-    
-}
-
-#article {
-    margin: solid transparent;
-    padding: 10 px solid transparent;
+    background-color: #F5EBEB;
+  
 }
 
 
-.card-img-bottom {
-    object-fit: cover;
-}  
+@media screen and (min-width: 450px) {
+    #article {
+        margin: 40px;
+    }
+  }
+
+#btn-publicar {
+    background-color: #E4D0D0;
+    border-color: #867070;
+    color: black;
+}

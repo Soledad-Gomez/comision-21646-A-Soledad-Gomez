@@ -2,39 +2,41 @@
 
 <header class="d-flex justify-content-center">
 
-  <h1>FORO PERSONAL</h1>
+  <h1 id="foro">Foro Personal</h1>
 
 </header>
 
 <main>
+    <h6 class="d-flex justify-content-center" id="inicial">Esta es una página web personal, donde puedes crear y compartir tus publicaciones</h6>
+    
+
     <!--modal para nueva publicación-->
     <div class="d-flex justify-content-center" id="btn-nueva-publicacion">
       <button type="button" class="btn btn-primary" id="btn-crear">Nueva publicación</button>
     </div>
-
+    
     <!-- tarjeta horizontal-->
-    <div class="card text mb-3 d-flex justify-content-center" id="tarjeta">
-      <div class="row g-0" id="contenedor-tarjeta">
-        <% tasks.forEach(task => { %>
+    
+        <% posts.forEach(post => { %>
 
-           <article class="tg card text mb-3 d-flex justify-content-center" data-id="<%= task.id %>" id="article">
+           <article class="tg card text mb-3 d-flex justify-content-center" data-id="<%= post.id %>" id="article">
             <div class="row g-0" id="contenedor-tarjeta">
-                <div class="col-md-4 d-flex align-items-center justify-content-center" id="caja">
-                    <img src="<%= task.enlace %>" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
+              <div class="col-md-4 d-flex align-items-center justify-content-center" id="caja">
+                    <img src="<%= post.enlace %>" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
                     <div class="card-body" id="ct">
-                        <h5 class="card-title"><%= task.titulo %></h5>
-                        <p class="card-text"><%= task.contenido %></p>
-                        <p class="card-text text-end"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        <div class="text-end">
+                        <h5 class="card-title"><%= post.titulo %></h5>
+                        <p class="card-text"><%= post.contenido %></p>
+                        <p class="card-text text-end"><small class="text-body-secondary"> Creado <%= post.createdAt %></small></p>
+                        <div class="text-end align-items-end">
                             <a class="btn btn-secondary" id="btnEditar">Editar publicación</a>
-                            <a class="btn btn-danger" id="btnEliminar">eliminar publicación</a>
+                            <a class="btn" id="btnEliminar">Eliminar publicación</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </article> 
+           </article> 
 
         <% }) %>
         

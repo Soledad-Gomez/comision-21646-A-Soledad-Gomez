@@ -1,0 +1,27 @@
+### Traer publicaciones
+GET http://localhost:3000/api/posts
+
+### Crear publicación
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "titulo": "Tercera publicación",
+    "contenido": "tercer contenido",
+    "enlace": "https://www.xtrafondos.com/wallpapers/paisaje-digital-en-atardecer-5846.jpg"
+}
+
+### Modificar publicación
+PUT  http://localhost:3000/api/posts/2
+Content-Type: application/json
+
+{
+    "titulo": "Título modificado",
+    "contenido": "Contenido modificado",
+    "enlace": "www.url.com"
+}
+
+### Eliminar publicación
+DELETE http://localhost:3000/api/posts/5
+
+
